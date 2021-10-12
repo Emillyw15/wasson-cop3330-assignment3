@@ -1,0 +1,15 @@
+@startuml
+package ex44 {
+ class productSearch {
+  +void main()
+ }
+
+ class productSearch {
+  ..member variables..
+  +Gson gson
+  +String json
+ }
+
+ productSearch --* Data : calls
+}
+@enduml

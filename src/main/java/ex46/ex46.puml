@@ -1,0 +1,14 @@
+@startuml
+package ex46 {
+ class wordFrequencyMain {
+  +void main()
+ }
+
+ class wordFrequency {
+  ..methods..
+  +void count()
+ }
+
+ wordFrequencyMain --* wordFrequency : calls
+}
+@enduml

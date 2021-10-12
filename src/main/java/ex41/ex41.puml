@@ -1,0 +1,21 @@
+@startuml
+package ex41 {
+ class Main {
+  +void main()
+ }
+
+ class NameReader {
+  ..member variables..
+  +List<String> names
+  __
+  ..constructor..
+  +NameReader()
+  ..methods..
+  +void fileReader()
+  +void sort()
+  +void output()
+ }
+
+ Main --* NameReader : calls
+}
+@enduml

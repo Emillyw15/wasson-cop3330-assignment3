@@ -1,0 +1,14 @@
+@startuml
+package ex45 {
+ class wordFinderMain {
+  +void main()
+ }
+
+ class wordFinder {
+  ..methods..
+  +void replaceWord()
+ }
+
+ wordFinderMain --* wordFinder : calls
+}
+@enduml

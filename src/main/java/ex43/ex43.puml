@@ -1,0 +1,24 @@
+@startuml
+package ex43 {
+ class webMain {
+  +void main()
+ }
+
+ class websiteGen {
+  ..member variables..
+  +String sitepath
+  +String jspath
+  +String csspath
+  +String site
+  +String name
+  __
+  ..constructor..
+  +websiteGen()
+  ..methods..
+  +void generateSite()
+  +void makeIndex()
+ }
+
+ webMain --* websiteGen : calls
+}
+@enduml
